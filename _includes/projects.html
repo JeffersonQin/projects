@@ -7,21 +7,35 @@
     {% assign sort_order = 'pushed_at' %}
   {% endif %}
 
-  {% if site.projects.exclude.archived && site.projects.exclude.forks %}
-    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order | reverse %}
-  {% elsif site.projects.exclude.archived %}
-    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | sort: sort_order | reverse %}
-  {% elsif site.projects.exclude.forks %}
-    {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
-  {% else %}
-    {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
-  {% endif %}
+  {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
 
-  {% for repository in filtered_repos | limit: site.projects.limit %}
-    {% unless site.projects.exclude.projects contains repository.name %}
+  {% if site.projects.exclude.use_exclude %}
+    {% if site.projects.exclude.archived && site.projects.exclude.forks %}
+      {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order | reverse %}
+    {% elsif site.projects.exclude.archived %}
+      {% assign filtered_repos = site.github.public_repositories | where:'archived', false | sort: sort_order | reverse %}
+    {% elsif site.projects.exclude.forks %}
+      {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
+    {% else %}
+      {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
+    {% endif %}
+
+    {% for repository in filtered_repos | limit: site.projects.limit %}
+      {% unless site.projects.exclude.projects contains repository.name %}
       <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
         {% include repo-card.html %}
       </div>
-    {% endunless %}
-  {% endfor %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+
+  {% if site.projects.include.use_include %}
+    {% for repository in filtered_repos | limit: site.projects.limit %}
+      {% if site.projects.include.projects contains repository.name %}
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        {% include repo-card.html %}
+      </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 </div>

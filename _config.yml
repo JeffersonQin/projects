@@ -17,16 +17,45 @@ defaults:
       layout: "post"
 
 projects:
-  sort_by: pushed
+  sort_by: stars
   # sort_by options:
   #   - pushed
   #   - stars
-  limit: 9
+  limit: 1000
   exclude:
-    archived: false
+    use_exclude: false
+    archived: true
     forks: true
     projects:
-    # - repo-name
+    - EnableFFPlugin
+    - arkHelper
+    - blog-asset
+    - H-Downloader
+    - Arknights_Anti-addiction_Cheater
+    - hugo-theme-pure
+  include:
+    use_include: true
+    projects:
+    - Ayase
+    - gyrojeff.top
+    - typexo-cli
+    - typexo-server
+    - namsucks
+    - FRC-Scouting-6487
+    - vscode-blogging-tool
+    - KirinShiKi
+    - VSCode-LaTeX-Snippets
+    - cdd-page-dewarp-ios
+    - DanDanPlayForiOS
+    - dandanplay_toolchain
+    - ti-chem-calc
+    - JeffersonQin.github.io
+    - hexo-cnblogs0sync
+    - DesktopSwitcher
+    - VSCode-Hexo-Next-Snippets
+    - FDU-SoC-2020
+    - CloudflareDDNS-WPF
+    - CloudflareDDNS
 
 # social_media:
   # behance: your_username
