@@ -37,25 +37,27 @@ projects:
     use_include: true
     projects:
     - Ayase
-    - gyrojeff.top
     - typexo-cli
-    - typexo-server
-    - namsucks
-    - FRC-Scouting-6487
-    - vscode-blogging-tool
     - KirinShiKi
     - VSCode-LaTeX-Snippets
     - cdd-page-dewarp-ios
-    - DanDanPlayForiOS
-    - dandanplay_toolchain
     - ti-chem-calc
-    - JeffersonQin.github.io
-    - hexo-cnblogs-sync
     - DesktopSwitcher
-    - VSCode-Hexo-Next-Snippets
-    - FDU-SoC-2020
-    - CloudflareDDNS-WPF
     - CloudflareDDNS
+    - YuzuMarker
+  other:
+    -
+      name: Project Nichijou
+      desc: 'The aim of the project is to reach an overall solution for the following tasks of anime watching: Video player with [Danmaku] Rendering Engine; Progress Management; Metadata Gathering; Media Management; Episode Recognition; High Extensibility.'
+      url: https://github.com/project-nichijou
+    -
+      name: Cerebral Microbleed Detection
+      desc: I trained a model that automatically detects bleeding spots in the brain, which, although only a simple application of deep learning, helps doctors diagnose diseases with greater ease and precision.
+      url: ''
+    -
+      name: Psych Salon
+      desc: I initiated a pysch salon at my school, aimed at relieving stress based on music therapy. Throughout the process, I trained a model to generate the recommended playlist automatically.
+      url: ''
 
 # social_media:
   # behance: your_username
@@ -76,12 +78,12 @@ projects:
   # youtube: your_username
 
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  # - name: CSS
+  #   web_url: https://github.com/topics/css
+  #   image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
 
-  - name: Web design
+  # - name: Web design
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  # - name: Sass
+  #   web_url: https://github.com/topics/sass
+  #   image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
