@@ -56,7 +56,7 @@ projects:
       url: ''
     -
       name: Psych Salon
-      desc: I initiated a pysch salon at my school, aimed at relieving stress based on music therapy. Throughout the process, I trained a model to generate the recommended playlist automatically.
+      desc: I initiated this psych salon at my school, aimed at relieving stress based on music therapy. Throughout the process, I trained a model to generate the recommended playlist automatically.
       url: ''
 
 # social_media:
