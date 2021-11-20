@@ -48,7 +48,7 @@ projects:
   other:
     -
       name: Project Nichijou
-      desc: 'The aim of the project is to reach an overall solution for the following tasks of anime watching: Video player with [Danmaku] Rendering Engine; Progress Management; Metadata Gathering; Media Management; Episode Recognition; High Extensibility.'
+      desc: 'The aim of the project is to reach an overall solution for the following tasks of anime watching: Video player with <a href="https://en.wikipedia.org/wiki/Danmaku">Danmaku</a> Rendering Engine; Progress Management; Metadata Gathering; Media Management; Episode Recognition; High Extensibility.'
       url: https://github.com/project-nichijou
     -
       name: Cerebral Microbleed Detection
